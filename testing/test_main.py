@@ -11,4 +11,4 @@ class UnitTests(unittest.TestCase) :
         low, medi, upp = myerrors(10,100)
         self.assertTrue( low>=np.percentile(ll,5) and low<=np.percentile(ll,95), "the lower percentile doesn't appear to be sampling from the correct distribution" )
         self.assertTrue( medi>=np.percentile(med,5) and medi<=np.percentile(med,95), "the median doesn't appear to be sampling from the correct distribution" )
-        self.assertTrue( upp>=np.percentile(uu,5) and upp<=np.percentile(uu,95), ""the upper percentile doesn't appear to be sampling from the correct distribution" )
+        self.assertTrue( upp>=np.percentile(uu,5) and upp<=np.percentile(uu,95), "the upper percentile doesn't appear to be sampling from the correct distribution" )
