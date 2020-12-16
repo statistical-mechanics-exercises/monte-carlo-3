@@ -13,7 +13,12 @@ print( area(1000), area(1000), area(1000) )
 def myerrors(N,M) : 
   # Your code goes here.
   l, m, u = 0, 0, 0
-  
+  samples = np.zeros(M)
+  for i in range(M) : 
+      samples[i] = area(N)
+  l = np.percentile(samples,5)
+  m = np.percentile(samples,50)
+  u = np.percentile(samples,95) 
   return l, m, u
   
 
